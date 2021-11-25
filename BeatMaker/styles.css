@@ -1,0 +1,98 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Monsterrat", sans-serif;
+  background: linear-gradient(
+      217deg,
+      rgba(255, 0, 0, 0.8),
+      rgba(255, 0, 0, 0) 70.71%
+    ),
+    linear-gradient(127deg, rgba(0, 255, 0, 0.8), rgba(0, 255, 0, 0) 70.71%),
+    linear-gradient(336deg, rgba(0, 0, 255, 0.8), rgba(0, 0, 255, 0) 70.71%);
+}
+
+.app {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header h1 {
+  margin: 100px 0px 50px 0px;
+  text-align: center;
+  font-size: 40px;
+  font-style: italic;
+}
+
+header p {
+  font-size: 20px;
+  font-style: oblique;
+  font-weight: bolder;
+}
+
+.pads {
+  background: lightblue;
+  width: 100%;
+  display: flex;
+}
+
+.pads > div {
+  height: 100px;
+  width: 100px;
+  flex: 1;
+}
+
+.pad1 {
+  background: #00411d;
+}
+
+.pad2 {
+  background: #1c0fc9;
+}
+
+.pad3 {
+  background: #9a6fff;
+}
+
+.pad4 {
+  background: #42015c;
+}
+
+.pad5 {
+  background: #f700ff;
+}
+
+.pad6 {
+  background: #ff002b;
+}
+
+.visual > div {
+  position: absolute;
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  bottom: 0%;
+  transform: scale(1);
+  z-index: -1;
+}
+
+@keyframes jump {
+  0% {
+    bottom: 0%;
+    left: 20%;
+  }
+  50% {
+    bottom: 50%;
+    left: 50%;
+  }
+  100% {
+    bottom: 00%;
+    left: 80%;
+  }
+}
